@@ -12,38 +12,38 @@
 
 	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				Логарифмическая функция <br />
+				<audio preload="auto" data-ignore data-autoplay loop src="/audio/stronger.mp3" type="audio/mp3"></audio>
+			</section>
+
+			<section data-markdown>
+				Логарифм числа $b$ по основанию $a$ определяется как показатель степени, в которую надо возвести основание $a$, чтобы получилось $b$.  Обозначение: $y=\log_a{x}$. Основание $a>0$ и не равно 1.
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
 	<script src="plugin/math/math.js"></script>
 	<script>
-        Reveal.initialize({ plugins: [RevealMath.KaTeX] });
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX]
+		});
 	</script>
-</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Логарифмическая функция <br />
-				<audio preload="auto" data-ignore data-autoplay loop src="/audio/stronger.mp3" type="audio/mp3"></audio>
-				</section>
 
-				<section data-markdown>
-				Логарифм числа $b$ по основанию $a$ определяется как показатель степени, в которую надо возвести основание $a$, чтобы получилось $b$.  Обозначение: $y=\log_a{x}$. Основание $a>0$ и не равно 1.
-				</section>
-			</div>
-		</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+</body>
 </html>
