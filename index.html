@@ -13,29 +13,25 @@
 	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	<script src="plugin/math/math.js"></script>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
-	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
-	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
-			onload="renderMathInElement(document.body);"></script>
 	<script>
-		Reveal.initialize({
-			katex: {
-				version: 'latest',
-				delimiters: [
-					{ left: "$$", right: "$$", display: true },
-					{ left: "$", right: "$", display: false },
+        Reveal.initialize({
+            katex: {
+                version: 'latest',
+                delimiters: [
+                    { left: "$$", right: "$$", display: true },
+                    { left: "$", right: "$", display: false },
 					{ left: "\\(", right: "\\)", display: false },
-					{ left: "\\begin{equation}", right: "\\end{equation}", display: true },
-					{ left: "\\begin{align}", right: "\\end{align}", display: true },
-					{ left: "\\begin{alignat}", right: "\\end{alignat}", display: true },
-					{ left: "\\begin{gather}", right: "\\end{gather}", display: true },
-					{ left: "\\begin{CD}", right: "\\end{CD}", display: true },
-					{ left: "\\[", right: "\\]", display: true }
-				],
-				ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-			},
-			plugins: [RevealMath.KaTeX],
-		});
+                    { left: "\\begin{equation}", right: "\\end{equation}", display: true },
+                    { left: "\\begin{align}", right: "\\end{align}", display: true },
+                    { left: "\\begin{alignat}", right: "\\end{alignat}", display: true },
+                    { left: "\\begin{gather}", right: "\\end{gather}", display: true },
+                    { left: "\\begin{CD}", right: "\\end{CD}", display: true },
+                    { left: "\\[", right: "\\]", display: true }
+                ]
+                ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            },
+            plugins: [RevealMath.KaTeX],
+        });
 	</script>
 </head>
 	<body>
@@ -45,7 +41,7 @@
 				<audio preload="auto" data-ignore data-autoplay loop src="/audio/stronger.mp3" type="audio/mp3"></audio>
 				</section>
 
-				<section>
+				<section data-markdown>
 				Логарифм числа $b$ по основанию $a$ определяется как показатель степени, в которую надо возвести основание $a$, чтобы получилось $b$.  Обозначение: $y=\log_a{x}$. Основание $a>0$ и не равно 1.
 				</section>
 			</div>
