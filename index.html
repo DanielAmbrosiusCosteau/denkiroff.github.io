@@ -24,20 +24,21 @@
 			<section data-markdown>
 				Логарифм числа $b$ по основанию $a$ определяется как показатель степени, в которую надо возвести основание $a$, чтобы получилось $b$.  Обозначение: $y=\log_a{x}$. Основание $a>0$ и не равно 1.
 			</section>
+
 			<section data-markdown>
-				<section data-markdown>
+				<section>
 					ОДЗ
 
 					Функция $y=\log_a{x}$ определена только при $x>0$ так как логарифм отрицательных чисел или нуля не определен.
 				</section>
-				<section data-markdown>
+				<section>
 					Множество значений
 
 					Все действительные числа
 				</section>
 				</section>
 			<section data-markdown>
-				<section data-markdown>
+				<section>
 					Периодичность функции
 
 					Функция $f(x)$ называется периодичной, если существует такое число $T$ не равное 0, что для любого $x$ из области определения этой функции выполняются равенства:
@@ -46,12 +47,12 @@
 					f(x-T)=f(x)=f(x+T).
 					$$
 				</section>
-				<section data-markdown>
+				<section>
 					Функция $y=\log_a{x}$ не является периодичной, так как не существует числа $T$, которое выполняло бы равенство выше.
 				</section>
 			</section>
 			<section data-markdown>
-				<section data-markdown>
+				<section>
 					Четность,нечетность
 
 					Функция $f(x)$ называется четной, если при всех $x$ из ее области определения верно равенство:
@@ -60,42 +61,42 @@
 					f(-x)=f(x).
 					$$
 				</section>
-				<section data-markdown>
+				<section>
 					Функция $f(x)$ называется нечетной, если при всех $x$ из ее области определения верно равенство:
 
 					$$
 					f(-x)=-f(x).
 					$$
 				</section>
-				<section data-markdown>
+				<section>
 					График нечетной функции симметричен относительно начала координат, а график четной функции симметричен относительно оси ординат.
 
 					Функции, не являющиеся ни четными, ни нечетными, называются функциями общего вида.
 				</section>
-				<section data-markdown>
+				<section>
 					У логарифмической функции нет свойств четности и нечетности, потому что она не определена при отрицательных $x$, имеет общий вид.
 				</section>
 			</section>
 
 			<section data-markdown>
-				<section data-markdown>
+				<section>
 					Производная
 
 					$$
 					(\log_a{x})^{\prime}=\lim_{\Delta \to 0} \frac{\log_a{x}+\Delta x -\log_a{x}}{\Delta x} =\lim_{\Delta \to 0} \frac{log_a x+\Delta x}{\Delta x}=
 					$$
 				</section>
-				<section data-markdown>
+				<section>
 					$$
 					=\lim_{\Delta x \to 0}\frac{1}{\Delta x} \cdot \log_a{(1+\frac{\delta x}{x})} = \lim_{\Delta x \to 0} \log_a (1 + \frac{\Delta x}{x})^{\frac{1}{\delta x}}=
 					$$
 				</section>
-				<section data-markdown>
+				<section>
 					$$
 					=\lim_{\Delta x \to 0} \log_a(\frac{1+\delta x}{x})^{\frac{1}{\Delta x} \cdot \frac{x}{x}}=\lim_{\Delta x \to 0} (\frac{1}{x}\cdot \log_a (1+\frac {\Delta x}{x})^{\frac{x}{\Delta x}}=
 					$$
 				</section>
-				<section data-markdown>
+				<section>
 					$$
 					=\frac{1}{x}\cdot \log_a \lim_{\Delta x \to 0} {1+\frac{\Delta x}{x})^{\frac{x}{\Delta x}}}=\frac{1}{x}\cdot \log_a e = \frac{1}{x}\cdot \frac{\ln e}{\ln a}= \frac{1}{x\ln a}.
 					$$
@@ -103,29 +104,29 @@
 			</section>
 
 			<section data-markdown>
-				<section data-markdown>
+				<section>
 					Монотонность функции
 
 					Теорема (Об условии возрастания/убывания монотонной функции)
 
 					Если производная $f^{\prime}(x)>0$ на некотором промежутке $X$, то функция $y=f(x)$ возрастает на этом промежутке. Если же $f^{\prime}(x) < 0$ на промежутке $X$, то функция $y=f(x)$ убывает на этом промежутке.
 				</section>
-				<section data-markdown>
+				<section>
 					$$
 					y^{\prime}=\frac{1}{x\ln{a}}
 					$$
 				</section>
-				<section data-markdown>
+				<section>
 					$$
 					a>1\Rightarrow \ln{a}>0\Rightarrow y^{\prime}>0
 					$$
 				</section>
-				<section data-markdown>
+				<section>
 					$$
 					0 < a < 1 \Rightarrow 0< \ln{a} < 1 \Rightarrow 0 < y^{\prime} < 1
 					$$
 				</section>
-				<section data-markdown>
+				<section>
 					Следовательно, логарифмическая функция $\log_a{x}$ имеет следующие интервалы монотонности:
 					При $a>1$ функция возрастает на всей области определения.
 					При $0 < a < 1 $ функция убывает на всей области определения.
@@ -133,35 +134,35 @@
 			</section>
 
 			<section data-markdown>
-				<section data-markdown>
+				<section>
 					Точки экстремума
 
 					Теорема Ферма (Необходимый признак существования экстремума функции
 
 					Если точка $x_0$ – точка экстремума функции $f(x)$, то в этой точке производная функции равна нулю $f^{\prime}(x)=0$ или не существует.
 				</section>
-				<section data-markdown>
+				<section>
 					У функции нет точек экстремума, так как производная логарифмической функции не может равняться нулю.
 				</section>
 			</section>
 
 			<section data-markdown>
-				<section data-markdown>
+				<section>
 					Выпуклость. Точки перегиба
 
 					Функция является выпуклой вниз на некотором интервале в том случае, когда ее график располагается не ниже касательной к нему в любой точке этого интервала.
 					Функция является выпуклой вверх на некотором интервале в том случае, если график данной функции располагается не выше касательной к нему в любой точке этого интервала.
 					Точка перегиба функции – это точка, при переходе через которую функция меняет выпуклость.
 				</section>
-				<section data-markdown>
+				<section>
 					Выпуклость графика характеризует вторая производная.
 
 					Пусть функция $y=f(x)$ дважды дифференцируема на некотором интервале. Если вторая производная $f^{\prime\prime}< 0 $ на интервале, то график функции является выпуклым вверх на данном интервале.
 				</section>
-				<section data-markdown>
+				<section>
 					Если вторая производная $f^{\prime\prime}>0$ на интервале, то график функции является выпуклым вниз на данном интервале.
 				</section>
-				<section data-markdown>
+				<section>
 					$$
 					y^{\prime\prime}=-\frac{1}{x^2\ln{a}}
 					$$
@@ -174,32 +175,32 @@
 					0< a < 1 \Rightarrow 0 < \ln{a} < 1 \Rightarrow 0 < y^{\prime\prime} < 1
 					$$
 				</section>
-				<section data-markdown>
+				<section>
 					Для $a>1$ график функции выпуклый вверх, а для $0 < a < 1 $ график функции вогнутый вниз.
 				</section>
 			</section>
 
 			<section data-markdown>
-				<section data-markdown>
+				<section>
 					Асимптоты
 
 					Если выполнено хотя бы одно из условий: $\lim_{x\to x_0-0}{f(x)}=\infty$ или $\lim_{x\to x_0+0}{f(x)}=\infty$, то прямую $x=x_0$ называют вертикальной асимптотой графика функции $y=\log_a{x}$.
 				</section>
-				<section data-markdown>
+				<section>
 					Вертикальная асимптота существует при $x=0$, так как
 
 					$$
 					\lim_{x\to 0+0}{\log_a{x}}=-\infty.
 					$$
 				</section>
-				<section data-markdown>
+				<section>
 					Уравнения наклонных асимптот обычно ищут в виде $y = kx + b$. По определению асимптоты:
 
 					$$
 					\lim_{x\to\infty}{kx+b-f(x)=0}
 					$$
 				</section>
-				<section data-markdown>
+				<section>
 					$$
 					k=\lim_{x\to \infty}{\frac{f\left(x\right)}{x}}
 					$$
@@ -208,32 +209,33 @@
 					k=\lim_{x\rightarrow\infty}{\frac{\log_a{x}}{x}}=\lim_{x\rightarrow\infty}{\frac{\ln{x}}{x\cdot\ln{2}}=0}.
 					$$
 				</section>
-				<section data-markdown>
+				<section>
 					Наклонных асимптот у функции $\log_a{x}$ нет.
 				</section>
 			</section>
 
 			<section data-markdown>
-				<section data-markdown>
+				<section>
 					Интеграл
 
 					Для нахождения интеграла будем использовать формулу интегрирования по частям.
 					Представим функцию $\log_a{x}$ как $\frac{\ln{x}}{\ln{a}}$ и проведем замену: $u=\ln{x}$, $dv=dx$, тогда $du=\frac{1}{2} dx$ и $u=x$
 				</section>
-				<section data-markdown>
+				<section>
 					$$
 					\int{\log_a{x}dx}=\int{\frac{\ln{x}}{\ln{a}}dx}=\frac{1}{\ln{a}}(x\ln{x}-\int{1dx})=\frac{x\ln{x}}{\ln{a}}-\frac{x}{\ln{a}}+c.
 					$$
 				</section>
 			</section>
 
-			<section data-marckdown>
-				<section data-marckdown>
+			<section data-markdown>
+				<section>
 					График функции
 				</section>
-				<section data-marckdown>
+				<section>
 					<iframe src="https://www.desmos.com/calculator/9bdkzd7yya" width="900" height="700" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 				</section>
+			</section>
 </div>
 	</div>
 
